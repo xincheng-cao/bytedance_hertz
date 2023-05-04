@@ -21,7 +21,7 @@ func customizedRegister(r *server.Hertz) {
 		func(c context.Context, ctx *app.RequestContext) {
 			ctx.String(consts.StatusOK, `{"res":"ok"}`)
 			resp_body, _ := ctx.Body()
-			fmt.Printf(string((resp_body)))
+			fmt.Println(string(resp_body))
 		},
 	)
 }
