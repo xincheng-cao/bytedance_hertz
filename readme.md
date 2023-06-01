@@ -16,6 +16,8 @@ https://levelup.gitconnected.com/using-modules-and-packages-in-go-36a418960556
 ### steps:
 go install github.com/cloudwego/hertz/cmd/hz@latest
 
+go get github.com/hertz-contrib/keyauth (maybe done this step...)
+
 export PATH=$GOPATH/bin:$PATH
 
 which hz
@@ -27,3 +29,6 @@ hz new
 
 go mod tidy
 
+## reference
+### hlog
+https://github.com/cloudwego/hertz-examples/blob/main/hlog/standard/main.go
