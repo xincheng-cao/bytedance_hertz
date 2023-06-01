@@ -24,4 +24,9 @@ func customizedRegister(r *server.Hertz) {
 			fmt.Println(string(resp_body))
 		},
 	)
+
+	r.GET(
+		"/test_hlog",
+		handler.TestHLog,
+	)
 }
